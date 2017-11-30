@@ -4,6 +4,8 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Csharp.ConsoleApp
 {
@@ -20,7 +22,45 @@ namespace Csharp.ConsoleApp
 
         static void Main(string[] args)
         {
-            int[] x = { 1, 2, 3 };
+         
+            Bitmap oldPic= null;
+           
+                oldPic = new Bitmap("..\\IN\\1.png");
+
+            
+            int width = oldPic.Width;
+            int height = oldPic.Height;
+            int[,] arrPic = new int[height,width];
+            for(int i = 0; i < height; i++)
+            {
+                for (int j =0; j < width; j++)
+                {
+                   
+                    arrPic[i, j] = oldPic.GetPixel(i, j).ToArgb();
+                }
+           
+
+            }
+            /////do your asm stuff here on arrPic
+
+
+
+            /////
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = 0; j < width; j++)
+                {
+                   oldPic.SetPixel(i,j,( Color.FromArgb(arrPic[i,j])) );
+                }
+
+
+            }
+             oldPic.Save("..\\OUT\\heeh.png");
+
+
+
+
+            int[] x = { 1, 20, 3 };
             char[] c = "How are u?".ToCharArray();
 
             //test SumArr procedure

@@ -5,3 +5,11 @@ C:\Users\Ibrahim Amer\Documents\Visual Studio 2015\Projects\ASM.ImageProcessingP
 C:\Users\Ibrahim Amer\Documents\Visual Studio 2015\Projects\ASM.ImageProcessingPackage\CsharpGUI\obj\Debug\CsharpGUI.csproj.GenerateResource.Cache
 C:\Users\Ibrahim Amer\Documents\Visual Studio 2015\Projects\ASM.ImageProcessingPackage\CsharpGUI\obj\Debug\CsharpGUI.exe
 C:\Users\Ibrahim Amer\Documents\Visual Studio 2015\Projects\ASM.ImageProcessingPackage\CsharpGUI\obj\Debug\CsharpGUI.pdb
+D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\CsharpGUI\bin\Debug\CsharpGUI.exe.config
+D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\CsharpGUI\bin\Debug\CsharpGUI.exe
+D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\CsharpGUI\bin\Debug\CsharpGUI.pdb
+D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\CsharpGUI\obj\Debug\CsharpGUI.csprojResolveAssemblyReference.cache
+D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\CsharpGUI\obj\Debug\CsharpGUI.Properties.Resources.resources
+D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\CsharpGUI\obj\Debug\CsharpGUI.csproj.GenerateResource.Cache
+D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\CsharpGUI\obj\Debug\CsharpGUI.exe
+D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\CsharpGUI\obj\Debug\CsharpGUI.pdb
