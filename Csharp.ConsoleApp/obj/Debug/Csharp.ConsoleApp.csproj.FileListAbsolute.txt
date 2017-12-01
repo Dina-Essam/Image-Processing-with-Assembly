@@ -9,3 +9,9 @@ D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\Csharp.Cons
 D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\Csharp.ConsoleApp\bin\Debug\Csharp.ConsoleApp.exe
 D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\Csharp.ConsoleApp\bin\Debug\Csharp.ConsoleApp.pdb
 D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\Csharp.ConsoleApp\obj\Debug\Csharp.ConsoleApp.csprojResolveAssemblyReference.cache
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\Csharp.ConsoleApp\bin\Debug\Csharp.ConsoleApp.exe.config
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\Csharp.ConsoleApp\obj\Debug\Csharp.ConsoleApp.exe
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\Csharp.ConsoleApp\obj\Debug\Csharp.ConsoleApp.pdb
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\Csharp.ConsoleApp\bin\Debug\Csharp.ConsoleApp.exe
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\Csharp.ConsoleApp\bin\Debug\Csharp.ConsoleApp.pdb
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\Csharp.ConsoleApp\obj\Debug\Csharp.ConsoleApp.csprojResolveAssemblyReference.cache

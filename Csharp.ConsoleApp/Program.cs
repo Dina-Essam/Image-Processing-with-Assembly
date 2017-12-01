@@ -22,21 +22,22 @@ namespace Csharp.ConsoleApp
 
         static void Main(string[] args)
         {
-         
-            Bitmap oldPic= null;
+
+            Bitmap oldPic = null;
            
-                oldPic = new Bitmap("..\\IN\\1.png");
+            oldPic = new Bitmap("..\\IN\\1.png");
 
             
             int width = oldPic.Width;
             int height = oldPic.Height;
-            int[,] arrPic = new int[height,width];
-            for(int i = 0; i < height; i++)
+            int[,] arrPic = new int[width,height];
+
+            for(int i = 0; i < width; i++)
             {
-                for (int j =0; j < width; j++)
+                for (int j =0; j < height; j++)
                 {
                    
-                    arrPic[i, j] = oldPic.GetPixel(i, j).ToArgb();
+                    arrPic[i, j] = oldPic.GetPixel(i,j).ToArgb();
                 }
            
 
@@ -46,16 +47,16 @@ namespace Csharp.ConsoleApp
 
 
             /////
-            for (int i = 0; i < height; i++)
+            for (int i = 0; i < width; i++)
             {
-                for (int j = 0; j < width; j++)
+                for (int j = 0; j < height; j++)
                 {
                    oldPic.SetPixel(i,j,( Color.FromArgb(arrPic[i,j])) );
                 }
 
 
             }
-             oldPic.Save("..\\OUT\\heeh.png");
+            oldPic.Save("..\\OUT\\heeh.png");
 
 
 
