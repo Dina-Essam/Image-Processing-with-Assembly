@@ -1,4 +1,5 @@
 EXPORTS
-Sum @1
-SumArr @2
-ToUpper @3
+Brightness @1
+Sum @2
+SumArr @3
+ToUpper @4

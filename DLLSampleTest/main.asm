@@ -7,6 +7,64 @@ include irvine32.inc
 ;Recieves: 2 DWord parametes number 1 and number 2
 ;Return: the sum of the 2 unsigned numbers into the EAX
 ;------------------------------------------------------
+Brightness PROC arr:PTR DWORD, W:DWORD, H:DWORD,Val:DWORD
+	push ebx
+	push eax
+	push ecx
+	push esi
+	push edx
+
+	mov esi,arr
+	mov ebx,val
+	mov eax,W
+	mul H
+	mov ecx,eax
+	L1:
+		movzx dx,byte ptr [esi]
+		add dx,bx
+		cmp dx,255
+		JB L2
+		mov byte ptr [esi],255
+		jmp next
+		L2:
+		mov byte ptr [esi],dl
+		next:
+
+		movzx dx,byte ptr [esi+1]
+		add dx,bx
+		cmp dx,255
+		JB L3
+		mov byte ptr [esi+1],255
+		jmp next2
+		L3:
+		mov byte ptr [esi+1],dl
+		next2:
+
+		movzx dx,byte ptr [esi+2]
+		add dx,bx
+		cmp dx,255
+		JB L4
+		mov byte ptr [esi+2],255
+		jmp next3
+		L4:
+		mov byte ptr [esi+2],dl
+		next3:
+
+		add esi,4
+	LOOP L1
+
+	pop edx
+	pop esi
+	pop ecx
+	pop eax
+	pop ebx
+	ret
+Brightness ENDP
+;-----------------------------------------------------
+;Sum PROC Calculates 2 unsigned integers
+;Recieves: 2 DWord parametes number 1 and number 2
+;Return: the sum of the 2 unsigned numbers into the EAX
+;------------------------------------------------------
 Sum PROC int1:DWORD, int2:DWORD
 	mov eax, int1
 	add eax, int2

@@ -15,3 +15,5 @@ E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\Csharp.ConsoleApp\o
 E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\Csharp.ConsoleApp\bin\Debug\Csharp.ConsoleApp.exe
 E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\Csharp.ConsoleApp\bin\Debug\Csharp.ConsoleApp.pdb
 E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\Csharp.ConsoleApp\obj\Debug\Csharp.ConsoleApp.csprojResolveAssemblyReference.cache
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\Csharp.ConsoleApp\obj\Debug\Csharp.ConsoleApp.Properties.Resources.resources
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\Csharp.ConsoleApp\obj\Debug\Csharp.ConsoleApp.csproj.GenerateResource.Cache

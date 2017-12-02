@@ -12,6 +12,9 @@ namespace Csharp.ConsoleApp
     class Program
     {
         [DllImport("Project.dll")]
+        private static extern void Brightness([In, Out]int[,] arr, int w,int h,int val);
+
+        [DllImport("Project.dll")]
         private static extern int Sum(int y, int b);
 
         [DllImport("Project.dll")]
@@ -24,8 +27,7 @@ namespace Csharp.ConsoleApp
         {
 
             Bitmap oldPic = null;
-           
-            oldPic = new Bitmap("..\\IN\\1.png");
+            oldPic = new Bitmap("..\\IN\\2.png");
 
             
             int width = oldPic.Width;
@@ -39,22 +41,18 @@ namespace Csharp.ConsoleApp
                    
                     arrPic[i, j] = oldPic.GetPixel(i,j).ToArgb();
                 }
-           
-
             }
+
             /////do your asm stuff here on arrPic
-
-
-
+            Brightness(arrPic,width,height,100);
             /////
+
             for (int i = 0; i < width; i++)
             {
                 for (int j = 0; j < height; j++)
                 {
                    oldPic.SetPixel(i,j,( Color.FromArgb(arrPic[i,j])) );
                 }
-
-
             }
             oldPic.Save("..\\OUT\\heeh.png");
 
