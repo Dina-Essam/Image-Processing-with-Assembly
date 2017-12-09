@@ -23,30 +23,45 @@ Brightness PROC arr:PTR DWORD, W:DWORD, H:DWORD,Val:DWORD
 		movzx dx,byte ptr [esi]
 		add dx,bx
 		cmp dx,255
-		JB L2
+		JL L2
 		mov byte ptr [esi],255
 		jmp next
 		L2:
+		cmp dx,0
+		JG H2
+		mov byte ptr [esi],0
+		jmp next
+		H2:
 		mov byte ptr [esi],dl
 		next:
 
 		movzx dx,byte ptr [esi+1]
 		add dx,bx
 		cmp dx,255
-		JB L3
+		JL L3
 		mov byte ptr [esi+1],255
 		jmp next2
 		L3:
+		cmp dx,0
+		JG H3
+		mov byte ptr [esi+1],0
+		jmp next2
+		H3:
 		mov byte ptr [esi+1],dl
 		next2:
 
 		movzx dx,byte ptr [esi+2]
 		add dx,bx
 		cmp dx,255
-		JB L4
+		JL L4
 		mov byte ptr [esi+2],255
 		jmp next3
 		L4:
+		cmp dx,0
+		JG H4
+		mov byte ptr [esi+2],0
+		jmp next3
+		H4:
 		mov byte ptr [esi+2],dl
 		next3:
 

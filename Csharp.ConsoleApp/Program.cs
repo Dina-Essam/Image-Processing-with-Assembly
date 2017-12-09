@@ -27,7 +27,7 @@ namespace Csharp.ConsoleApp
         {
 
             Bitmap oldPic = null;
-            oldPic = new Bitmap("..\\IN\\2.png");
+            oldPic = new Bitmap("..\\IN\\3.png");
 
             
             int width = oldPic.Width;
@@ -44,7 +44,7 @@ namespace Csharp.ConsoleApp
             }
 
             /////do your asm stuff here on arrPic
-            Brightness(arrPic,width,height,100);
+            Brightness(arrPic,width,height,-50);
             /////
 
             for (int i = 0; i < width; i++)
