@@ -1,12 +1,67 @@
 include irvine32.inc
 .data
-;no static data
+fpr real4 0.3
+fpg real4 0.59
+fpb real4 0.11
 .code
 ;-----------------------------------------------------
 ;Sum PROC Calculates 2 unsigned integers
 ;Recieves: 2 DWord parametes number 1 and number 2
 ;Return: the sum of the 2 unsigned numbers into the EAX
 ;------------------------------------------------------
+
+GreyScale PROC uses esi, myarr:PTR DWORD ,w:DWORD,h:DWORD
+;init loop counter(ecx)
+mov eax,w
+mul h
+mov ecx,eax
+;init esi with img offset
+mov esi,myarr
+;init new tmp local var
+sub esp,4
+ 
+ 
+FINIT 
+L1:
+;st(0)= 0.11*b
+movzx eax,byte ptr [esi]
+mov [ebp-8],eax
+fld fpb
+fimul dword ptr [ebp-8]
+ 
+;st(0) =0.59*g
+movzx eax,byte ptr [esi+1]
+mov [ebp-8],eax
+fld fpg
+fimul dword ptr [ebp-8]
+ 
+;st(0) =0.3*r
+movzx eax,byte ptr [esi+2]
+mov [ebp-8],eax
+fld fpr
+fimul dword ptr [ebp-8]
+;st(0)=0.11*b+0.59*g
+fadd 
+;st(0)=0.11*b+0.59*g+0.3*r
+fadd ST(0),ST(1)
+;store result &pop in eax
+fistp dword ptr [ebp-8]
+mov eax,[ebp-8]    
+;store gray-scaled value in rgb
+mov [esi],al         
+mov [esi+1],al
+mov [esi+2],al
+;make fp stack empty
+ffree st(0)
+;go to the next pixel
+add esi,4
+loop L1
+;add esp,4
+ 
+ 
+ret
+GreyScale endp
+
 Brightness PROC arr:PTR DWORD, W:DWORD, H:DWORD,Val:DWORD
 	push ebx
 	push eax

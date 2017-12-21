@@ -72,6 +72,7 @@ xcopy "$(ProjectDir)Debug\Project.dll" "$(SolutionDir)Csharp.ConsoleApp\bin\Debu
     <MASM Include="main.asm" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\csharp.consoleapp\app.config" />
     <None Include="main.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
