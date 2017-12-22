@@ -62,6 +62,15 @@ loop L1
 ret
 GreyScale endp
 
+
+;-----------------------------------------------------
+;Sum PROC Calculates 2 unsigned integers
+;Recieves: 2 DWord parametes number 1 and number 2
+;Return: the sum of the 2 unsigned numbers into the EAX
+;------------------------------------------------------
+
+
+
 Brightness PROC arr:PTR DWORD, W:DWORD, H:DWORD,Val:DWORD
 	push ebx
 	push eax

@@ -1,10 +1,11 @@
 ﻿  Assembling main.asm...
-main.asm(198): warning A6004: procedure argument or local not referenced : hInstance
-main.asm(198): warning A6004: procedure argument or local not referenced : fdwReason
-main.asm(198): warning A6004: procedure argument or local not referenced : lpReserved
-     Creating library C:\Users\Esraa Afifi\Desktop\Semmester1-new\a7a\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.lib and object C:\Users\Esraa Afifi\Desktop\Semmester1-new\a7a\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.exp
-  Project.vcxproj -> C:\Users\Esraa Afifi\Desktop\Semmester1-new\a7a\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.dll
-  C:\Users\Esraa Afifi\Desktop\Semmester1-new\a7a\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.dll
+main.asm(207): warning A6004: procedure argument or local not referenced : hInstance
+main.asm(207): warning A6004: procedure argument or local not referenced : fdwReason
+main.asm(207): warning A6004: procedure argument or local not referenced : lpReserved
+     Creating library E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.lib and object E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.exp
+  Project.vcxproj -> E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.dll
+  Project.vcxproj -> E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.pdb (Full PDB)
+  E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.dll
   1 File(s) copied
-  C:\Users\Esraa Afifi\Desktop\Semmester1-new\a7a\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.dll
+  E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.dll
   1 File(s) copied

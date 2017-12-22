@@ -13,3 +13,12 @@ D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\CsharpGUI\o
 D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\CsharpGUI\obj\Debug\CsharpGUI.csproj.GenerateResource.Cache
 D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\CsharpGUI\obj\Debug\CsharpGUI.exe
 D:\gitprojects\ASM.ImageProcessingPackage\ASM.ImageProcessingPackage\CsharpGUI\obj\Debug\CsharpGUI.pdb
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\CsharpGUI\bin\Debug\CsharpGUI.exe.config
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\CsharpGUI\obj\Debug\CsharpGUI.exe
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\CsharpGUI\obj\Debug\CsharpGUI.pdb
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\CsharpGUI\obj\Debug\CsharpGUI.csprojResolveAssemblyReference.cache
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\CsharpGUI\obj\Debug\CsharpGUI.Form1.resources
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\CsharpGUI\obj\Debug\CsharpGUI.Properties.Resources.resources
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\CsharpGUI\obj\Debug\CsharpGUI.csproj.GenerateResource.Cache
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\CsharpGUI\bin\Debug\CsharpGUI.exe
+E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\CsharpGUI\bin\Debug\CsharpGUI.pdb

@@ -10,6 +10,12 @@ namespace CsharpGUI
     static class Program
     {
         [DllImport("Project.dll")]
+        public static extern void GreyScale([In, Out]int[,] arr, int w, int h);
+
+        [DllImport("Project.dll")]
+        public static extern void Brightness([In, Out]int[,] arr, int w, int h, int val);
+
+        [DllImport("Project.dll")]
         private static extern int Sum(int y, int b);
 
         [DllImport("Project.dll")]
