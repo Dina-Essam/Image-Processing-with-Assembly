@@ -16,6 +16,16 @@ namespace CsharpGUI
         public static extern void Brightness([In, Out]int[,] arr, int w, int h, int val);
 
         [DllImport("Project.dll")]
+        public static extern void ImageAddition([In, Out]int[,] arr, [In, Out]int[,] arr2, int w, int h);
+        [DllImport("Project.dll")]
+        public static extern void INVERT([In, Out]int[,] arr, int w, int h);
+        [DllImport("Project.dll")]
+        public static extern void ANDING([In, Out]int[,] arr, [In, Out]int[,] arr2, int w, int h);
+        [DllImport("Project.dll")]
+        public static extern void ORING([In, Out]int[,] arr, [In, Out]int[,] arr2, int w, int h);
+
+
+        [DllImport("Project.dll")]
         private static extern int Sum(int y, int b);
 
         [DllImport("Project.dll")]
@@ -23,9 +33,7 @@ namespace CsharpGUI
 
         [DllImport("Project.dll")]
         private static extern void ToUpper([In, Out]char[] arr, int sz);
-        [DllImport("Project.dll")]
-        private static extern void ImageToGray([In, Out]int[] _image, int _size);
-
+      
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

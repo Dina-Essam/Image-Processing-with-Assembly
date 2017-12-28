@@ -1,7 +1,7 @@
 ﻿  Assembling main.asm...
-main.asm(207): warning A6004: procedure argument or local not referenced : hInstance
-main.asm(207): warning A6004: procedure argument or local not referenced : fdwReason
-main.asm(207): warning A6004: procedure argument or local not referenced : lpReserved
+main.asm(350): warning A6004: procedure argument or local not referenced : hInstance
+main.asm(350): warning A6004: procedure argument or local not referenced : fdwReason
+main.asm(350): warning A6004: procedure argument or local not referenced : lpReserved
      Creating library E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.lib and object E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.exp
   Project.vcxproj -> E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.dll
   Project.vcxproj -> E:\year 3\Term 1\Assembly\Project\Image-Processing-with-Masm\DLLSampleTest\Debug\Project.pdb (Full PDB)

@@ -71,13 +71,8 @@ GreyScale endp
 
 
 
-Brightness PROC arr:PTR DWORD, W:DWORD, H:DWORD,Val:DWORD
-	push ebx
-	push eax
-	push ecx
-	push esi
-	push edx
-
+Brightness PROC PROC uses eax ebx ecx esi edi edx ,arr:PTR DWORD, W:DWORD, H:DWORD,Val:DWORD
+	
 	mov esi,arr
 	mov ebx,val
 	mov eax,W
@@ -132,13 +127,161 @@ Brightness PROC arr:PTR DWORD, W:DWORD, H:DWORD,Val:DWORD
 		add esi,4
 	LOOP L1
 
-	pop edx
-	pop esi
-	pop ecx
-	pop eax
-	pop ebx
 	ret
 Brightness ENDP
+;-----------------------------------------------------
+;Sum PROC Calculates 2 unsigned integers
+;Recieves: 2 DWord parametes number 1 and number 2
+;Return: the sum of the 2 unsigned numbers into the EAX
+;------------------------------------------------------
+
+ImageAddition PROC uses eax ebx ecx esi edi edx , FirstImage:PTR DWORD, SecondImage:PTR DWORD, W:DWORD, H:DWORD
+ 
+	mov esi , FirstImage
+	mov edi , SecondImage
+	mov eax , 0
+	mov eax , W
+	mul H
+	mov ecx , eax
+ 
+	Outer:
+ 
+	movzx dx,byte ptr [esi]
+	movzx bx,byte ptr [edi]
+	add dx,bx
+	cmp dx,255
+	JL L2
+	mov byte ptr [esi],255
+	jmp next
+	L2:
+	cmp dx,0
+	JG H2
+	mov byte ptr [esi],0
+	jmp next
+	H2:
+	mov byte ptr [esi],dl
+ 
+	next:
+	movzx dx,byte ptr [esi+1]
+	movzx bx,byte ptr [edi+1]
+	add dx,bx
+	cmp dx,255
+	JL L3
+	mov byte ptr [esi+1],255
+	jmp next2
+	L3:
+	cmp dx,0
+	JG H3
+	mov byte ptr [esi+1],0
+	jmp next2
+	H3:
+	mov byte ptr [esi+1],dl
+ 
+	next2:
+	movzx dx,byte ptr [esi+2]
+	movzx bx,byte ptr [edi+2]
+	add dx,bx
+	cmp dx,255
+	JL L4
+	mov byte ptr [esi+2],255
+	jmp next3
+	L4:
+	cmp dx,0
+	JG H4
+	mov byte ptr [esi+2],0
+	jmp next3
+	H4:
+	mov byte ptr [esi+2],dl
+ 
+	next3:
+	add esi , 4
+	add edi , 4
+	LOOP Outer
+ ret
+ ImageAddition ENDP
+ ;-----------------------------------------------------
+;Sum PROC Calculates 2 unsigned integers
+;Recieves: 2 DWord parametes number 1 and number 2
+;Return: the sum of the 2 unsigned numbers into the EAX
+;------------------------------------------------------
+ INVERT PROC uses eax ebx ecx esi edi edx , arr:PTR DWORD, W:DWORD, H:DWORD
+ 
+	mov esi , arr
+	mov eax,W
+	mul H
+	mov ecx,eax
+
+	Outer:
+	mov dx,word ptr [esi]
+	NOT dx
+	mov word ptr [esi],dx
+	mov dl,[esi+2]
+	not dl
+	mov [esi+2],dl
+	add esi , 4
+
+	LOOP Outer
+ ret
+ INVERT ENDP
+;-----------------------------------------------------
+;Sum PROC Calculates 2 unsigned integers
+;Recieves: 2 DWord parametes number 1 and number 2
+;Return: the sum of the 2 unsigned numbers into the EAX
+;------------------------------------------------------
+ ANDING PROC uses eax ebx ecx esi edi edx , FirstImage:PTR DWORD, SecondImage:PTR DWORD, W:DWORD, H:DWORD
+ 
+	mov esi , FirstImage
+	mov edi , SecondImage
+	mov eax,W
+	mul H
+	mov ecx,eax
+ 
+	Outer:
+	mov dx,word ptr [esi]
+	mov bx,word ptr [edi]
+	AND dx ,bx
+	mov [esi],dx
+	mov dl,[esi+2]
+	mov bl,[edi+2]
+	AND dl,bl
+	mov [esi+2],dl
+
+	add esi , 4
+	add edi , 4
+
+	LOOP Outer
+ ret
+ ANDING ENDP
+ ;-----------------------------------------------------
+;Sum PROC Calculates 2 unsigned integers
+;Recieves: 2 DWord parametes number 1 and number 2
+;Return: the sum of the 2 unsigned numbers into the EAX
+;------------------------------------------------------
+ ORING PROC uses eax ebx ecx esi edi edx , FirstImage:PTR DWORD, SecondImage:PTR DWORD, W:DWORD, H:DWORD
+ 
+	mov esi , FirstImage
+	mov edi , SecondImage
+	mov eax,W
+	mul H
+	mov ecx,eax
+ 
+	Outer:
+	mov dx,word ptr [esi]
+	mov bx,word ptr [edi]
+	OR dx ,bx
+	mov [esi],dx
+	mov dl,[esi+2]
+	mov bl,[edi+2]
+	OR dl,bl
+	mov [esi+2],dl
+
+	add esi , 4
+	add edi , 4
+
+	LOOP Outer
+ ret
+ ORING ENDP
+ 
 ;-----------------------------------------------------
 ;Sum PROC Calculates 2 unsigned integers
 ;Recieves: 2 DWord parametes number 1 and number 2

@@ -34,6 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.BrightnessValue = new System.Windows.Forms.TrackBar();
             this.GreyScale = new System.Windows.Forms.Button();
+            this.INVERT = new System.Windows.Forms.Button();
+            this.anding = new System.Windows.Forms.Button();
+            this.oring = new System.Windows.Forms.Button();
+            this.adding = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BrightnessValue)).BeginInit();
             this.SuspendLayout();
@@ -91,7 +95,7 @@
             // 
             // GreyScale
             // 
-            this.GreyScale.Location = new System.Drawing.Point(106, 12);
+            this.GreyScale.Location = new System.Drawing.Point(93, 12);
             this.GreyScale.Name = "GreyScale";
             this.GreyScale.Size = new System.Drawing.Size(75, 23);
             this.GreyScale.TabIndex = 6;
@@ -99,11 +103,55 @@
             this.GreyScale.UseVisualStyleBackColor = true;
             this.GreyScale.Click += new System.EventHandler(this.GreyScale_Click);
             // 
+            // INVERT
+            // 
+            this.INVERT.Location = new System.Drawing.Point(174, 12);
+            this.INVERT.Name = "INVERT";
+            this.INVERT.Size = new System.Drawing.Size(75, 23);
+            this.INVERT.TabIndex = 7;
+            this.INVERT.Text = "Invert";
+            this.INVERT.UseVisualStyleBackColor = true;
+            this.INVERT.Click += new System.EventHandler(this.INVERT_Click);
+            // 
+            // anding
+            // 
+            this.anding.Location = new System.Drawing.Point(255, 12);
+            this.anding.Name = "anding";
+            this.anding.Size = new System.Drawing.Size(75, 23);
+            this.anding.TabIndex = 8;
+            this.anding.Text = "And";
+            this.anding.UseVisualStyleBackColor = true;
+            this.anding.Click += new System.EventHandler(this.anding_Click);
+            // 
+            // oring
+            // 
+            this.oring.Location = new System.Drawing.Point(336, 12);
+            this.oring.Name = "oring";
+            this.oring.Size = new System.Drawing.Size(75, 23);
+            this.oring.TabIndex = 9;
+            this.oring.Text = "OR";
+            this.oring.UseVisualStyleBackColor = true;
+            this.oring.Click += new System.EventHandler(this.oring_Click);
+            // 
+            // adding
+            // 
+            this.adding.Location = new System.Drawing.Point(417, 12);
+            this.adding.Name = "adding";
+            this.adding.Size = new System.Drawing.Size(75, 23);
+            this.adding.TabIndex = 10;
+            this.adding.Text = "ADD";
+            this.adding.UseVisualStyleBackColor = true;
+            this.adding.Click += new System.EventHandler(this.adding_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(591, 487);
+            this.Controls.Add(this.adding);
+            this.Controls.Add(this.oring);
+            this.Controls.Add(this.anding);
+            this.Controls.Add(this.INVERT);
             this.Controls.Add(this.GreyScale);
             this.Controls.Add(this.BrightnessValue);
             this.Controls.Add(this.label2);
@@ -127,6 +175,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TrackBar BrightnessValue;
         private System.Windows.Forms.Button GreyScale;
+        private System.Windows.Forms.Button INVERT;
+        private System.Windows.Forms.Button anding;
+        private System.Windows.Forms.Button oring;
+        private System.Windows.Forms.Button adding;
     }
 }
 

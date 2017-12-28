@@ -1,7 +1,11 @@
 EXPORTS
 GreyScale @1
 Brightness @2
-Sum @3
-SumArr @4
-ToUpper @5
+ImageAddition @3
+INVERT @4
+ANDING @5
+ORING @6
+Sum @7
+SumArr @8
+ToUpper @9
 
